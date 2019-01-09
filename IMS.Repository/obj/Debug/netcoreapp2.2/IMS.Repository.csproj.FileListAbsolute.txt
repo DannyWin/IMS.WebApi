@@ -1,0 +1,17 @@
+D:\Projects\IMS.WebApi\IMS.Repository\bin\Debug\netcoreapp2.2\IMS.IRepository.dll
+D:\Projects\IMS.WebApi\IMS.Repository\bin\Debug\netcoreapp2.2\IMS.Model.dll
+D:\Projects\IMS.WebApi\IMS.Repository\obj\Debug\netcoreapp2.2\IMS.Repository.csprojAssemblyReference.cache
+D:\Projects\IMS.WebApi\IMS.Repository\obj\Debug\netcoreapp2.2\IMS.Repository.csproj.CoreCompileInputs.cache
+D:\Projects\IMS.WebApi\IMS.Repository\obj\Debug\netcoreapp2.2\IMS.Repository.AssemblyInfoInputs.cache
+D:\Projects\IMS.WebApi\IMS.Repository\obj\Debug\netcoreapp2.2\IMS.Repository.AssemblyInfo.cs
+D:\Projects\IMS.WebApi\IMS.Repository\bin\Debug\netcoreapp2.2\IMS.Repository.deps.json
+D:\Projects\IMS.WebApi\IMS.Repository\bin\Debug\netcoreapp2.2\IMS.Repository.runtimeconfig.json
+D:\Projects\IMS.WebApi\IMS.Repository\bin\Debug\netcoreapp2.2\IMS.Repository.runtimeconfig.dev.json
+D:\Projects\IMS.WebApi\IMS.Repository\bin\Debug\netcoreapp2.2\IMS.Repository.dll
+D:\Projects\IMS.WebApi\IMS.Repository\bin\Debug\netcoreapp2.2\IMS.Repository.pdb
+D:\Projects\IMS.WebApi\IMS.Repository\bin\Debug\netcoreapp2.2\IMS.IRepository.pdb
+D:\Projects\IMS.WebApi\IMS.Repository\bin\Debug\netcoreapp2.2\IMS.Model.pdb
+D:\Projects\IMS.WebApi\IMS.Repository\obj\Debug\netcoreapp2.2\IMS.Repository.csproj.CopyComplete
+D:\Projects\IMS.WebApi\IMS.Repository\obj\Debug\netcoreapp2.2\IMS.Repository.dll
+D:\Projects\IMS.WebApi\IMS.Repository\obj\Debug\netcoreapp2.2\IMS.Repository.pdb
+D:\Projects\IMS.WebApi\IMS.Repository\bin\Debug\netcoreapp2.2\IMS.Model.xml

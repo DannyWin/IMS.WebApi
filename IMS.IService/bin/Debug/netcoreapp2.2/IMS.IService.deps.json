@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "IMS.IService/1.0.0": {
+        "dependencies": {
+          "IMS.Model": "1.0.0"
+        },
+        "runtime": {
+          "IMS.IService.dll": {}
+        }
+      },
+      "IMS.Model/1.0.0": {
+        "runtime": {
+          "IMS.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IMS.IService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IMS.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

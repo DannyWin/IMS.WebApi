@@ -1,0 +1,10 @@
+D:\Projects\IMS.WebApi\IMS.Model\bin\Debug\netcoreapp2.2\IMS.Model.deps.json
+D:\Projects\IMS.WebApi\IMS.Model\bin\Debug\netcoreapp2.2\IMS.Model.dll
+D:\Projects\IMS.WebApi\IMS.Model\bin\Debug\netcoreapp2.2\IMS.Model.pdb
+D:\Projects\IMS.WebApi\IMS.Model\obj\Debug\netcoreapp2.2\IMS.Model.csprojAssemblyReference.cache
+D:\Projects\IMS.WebApi\IMS.Model\obj\Debug\netcoreapp2.2\IMS.Model.csproj.CoreCompileInputs.cache
+D:\Projects\IMS.WebApi\IMS.Model\obj\Debug\netcoreapp2.2\IMS.Model.AssemblyInfoInputs.cache
+D:\Projects\IMS.WebApi\IMS.Model\obj\Debug\netcoreapp2.2\IMS.Model.AssemblyInfo.cs
+D:\Projects\IMS.WebApi\IMS.Model\obj\Debug\netcoreapp2.2\IMS.Model.dll
+D:\Projects\IMS.WebApi\IMS.Model\obj\Debug\netcoreapp2.2\IMS.Model.pdb
+D:\Projects\IMS.WebApi\IMS.Model\bin\Debug\netcoreapp2.2\IMS.Model.xml

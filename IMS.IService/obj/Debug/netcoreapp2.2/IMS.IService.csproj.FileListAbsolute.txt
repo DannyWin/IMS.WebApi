@@ -1,0 +1,13 @@
+D:\Projects\IMS.WebApi\IMS.IService\bin\Debug\netcoreapp2.2\IMS.IService.deps.json
+D:\Projects\IMS.WebApi\IMS.IService\bin\Debug\netcoreapp2.2\IMS.IService.dll
+D:\Projects\IMS.WebApi\IMS.IService\bin\Debug\netcoreapp2.2\IMS.IService.pdb
+D:\Projects\IMS.WebApi\IMS.IService\bin\Debug\netcoreapp2.2\IMS.Model.dll
+D:\Projects\IMS.WebApi\IMS.IService\bin\Debug\netcoreapp2.2\IMS.Model.pdb
+D:\Projects\IMS.WebApi\IMS.IService\obj\Debug\netcoreapp2.2\IMS.IService.csprojAssemblyReference.cache
+D:\Projects\IMS.WebApi\IMS.IService\obj\Debug\netcoreapp2.2\IMS.IService.csproj.CoreCompileInputs.cache
+D:\Projects\IMS.WebApi\IMS.IService\obj\Debug\netcoreapp2.2\IMS.IService.AssemblyInfoInputs.cache
+D:\Projects\IMS.WebApi\IMS.IService\obj\Debug\netcoreapp2.2\IMS.IService.AssemblyInfo.cs
+D:\Projects\IMS.WebApi\IMS.IService\obj\Debug\netcoreapp2.2\IMS.IService.csproj.CopyComplete
+D:\Projects\IMS.WebApi\IMS.IService\obj\Debug\netcoreapp2.2\IMS.IService.dll
+D:\Projects\IMS.WebApi\IMS.IService\obj\Debug\netcoreapp2.2\IMS.IService.pdb
+D:\Projects\IMS.WebApi\IMS.IService\bin\Debug\netcoreapp2.2\IMS.Model.xml

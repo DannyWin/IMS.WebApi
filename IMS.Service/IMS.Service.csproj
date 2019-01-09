@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IMS.IRepository\IMS.IRepository.csproj" />
+    <ProjectReference Include="..\IMS.IService\IMS.IService.csproj" />
+    <ProjectReference Include="..\IMS.Model\IMS.Model.csproj" />
+  </ItemGroup>
+
+</Project>
