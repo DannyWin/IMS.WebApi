@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace IMS.Model
 {
@@ -7,6 +8,7 @@ namespace IMS.Model
         /// <summary>
         /// Id
         /// </summary>
+        [Key]
         public int Id { get; set; }
         /// <summary>
         /// 单位Id

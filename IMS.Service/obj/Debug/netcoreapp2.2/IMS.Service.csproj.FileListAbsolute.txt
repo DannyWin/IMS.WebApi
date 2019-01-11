@@ -7,6 +7,7 @@ D:\Projects\IMS.WebApi\IMS.Service\bin\Debug\netcoreapp2.2\IMS.Model.dll
 D:\Projects\IMS.WebApi\IMS.Service\bin\Debug\netcoreapp2.2\IMS.IRepository.pdb
 D:\Projects\IMS.WebApi\IMS.Service\bin\Debug\netcoreapp2.2\IMS.IService.pdb
 D:\Projects\IMS.WebApi\IMS.Service\bin\Debug\netcoreapp2.2\IMS.Model.pdb
+D:\Projects\IMS.WebApi\IMS.Service\bin\Debug\netcoreapp2.2\IMS.Model.xml
 D:\Projects\IMS.WebApi\IMS.Service\obj\Debug\netcoreapp2.2\IMS.Service.csprojAssemblyReference.cache
 D:\Projects\IMS.WebApi\IMS.Service\obj\Debug\netcoreapp2.2\IMS.Service.csproj.CoreCompileInputs.cache
 D:\Projects\IMS.WebApi\IMS.Service\obj\Debug\netcoreapp2.2\IMS.Service.AssemblyInfoInputs.cache
@@ -14,4 +15,3 @@ D:\Projects\IMS.WebApi\IMS.Service\obj\Debug\netcoreapp2.2\IMS.Service.AssemblyI
 D:\Projects\IMS.WebApi\IMS.Service\obj\Debug\netcoreapp2.2\IMS.Service.csproj.CopyComplete
 D:\Projects\IMS.WebApi\IMS.Service\obj\Debug\netcoreapp2.2\IMS.Service.dll
 D:\Projects\IMS.WebApi\IMS.Service\obj\Debug\netcoreapp2.2\IMS.Service.pdb
-D:\Projects\IMS.WebApi\IMS.Service\bin\Debug\netcoreapp2.2\IMS.Model.xml

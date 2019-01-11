@@ -10,10 +10,16 @@ namespace IMS.Service
 {
     public class RoleService : BaseService<Role>, IRoleService
     {
-        IRoleRepository RoleRepository;
-        public RoleService(IRoleRepository roleRepository) : base(roleRepository)
+        IRoleRepository dal;
+        public RoleService(IRoleRepository dal)
         {
-
+            this.dal = dal;
+            base.baseDal = dal;
         }
+        //IRoleRepository RoleRepository;
+        //public RoleService(IRoleRepository roleRepository) : base(roleRepository)
+        //{
+
+        //}
     }
 }

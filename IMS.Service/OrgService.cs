@@ -10,10 +10,16 @@ namespace IMS.Service
 {
     public class OrgService : BaseService<Org>, IOrgService
     {
-        IOrgRepository OrgRepository;
-        public OrgService(IOrgRepository orgRepository) : base(orgRepository)
+        IOrgRepository dal;
+        public OrgService(IOrgRepository dal)
         {
-
+            this.dal = dal;
+            base.baseDal = dal;
         }
+        //IOrgRepository OrgRepository;
+        //public OrgService(IOrgRepository orgRepository) : base(orgRepository)
+        //{
+
+        //}
     }
 }

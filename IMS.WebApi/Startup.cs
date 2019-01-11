@@ -32,8 +32,9 @@ namespace IMS.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            BaseRepository<User>.connection= Configuration.GetSection("ConnectionStrings:MySqlConnection").Value;
-            services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MySqlConnection")));
+            BaseDBConfig.ConnectionString = Configuration.GetSection("AppSettings:SqlServerConnection").Value;
+            //BaseRepository<User>.connection= Configuration.GetSection("ConnectionStrings:MySqlConnection").Value;
+            //services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MySqlConnection")));
             services.AddSingleton(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddScoped(typeof(IBaseService<>), typeof(BaseService<>));
             services.AddScoped<IUserService, UserService>();

@@ -11,6 +11,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="sqlSugarCore" Version="4.9.7.4" />
   </ItemGroup>
 
   <ItemGroup>

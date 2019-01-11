@@ -10,10 +10,16 @@ namespace IMS.Service
 {
     public class UserService : BaseService<User>, IUserService
     {
-        IUserRepository UserRepository;
-        public UserService(IUserRepository userRepository) : base(userRepository)
+        IUserRepository dal;
+        public UserService(IUserRepository dal)
         {
-
+            this.dal = dal;
+            base.baseDal = dal;
         }
+        //IUserRepository UserRepository;
+        //public UserService(IUserRepository userRepository) : base(userRepository)
+        //{
+        //    UserRepository = userRepository;
+        //}
     }
 }
