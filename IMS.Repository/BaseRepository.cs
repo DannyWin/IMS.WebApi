@@ -64,7 +64,7 @@ namespace IMS.Repository
         /// </summary>
         /// <param name="lstIds">id列表（必须指定主键特性 [SugarColumn(IsPrimaryKey=true)]），如果是联合主键，请使用Where条件</param>
         /// <returns>数据实体列表</returns>
-        public async Task<List<TEntity>> QueryByIDs(object[] lstIds)
+        public async Task<List<TEntity>> QueryByIDs(int[] lstIds)
         {
             return await Task.Run(() => db.Queryable<TEntity>().In(lstIds).ToList());
         }

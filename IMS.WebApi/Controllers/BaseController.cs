@@ -31,7 +31,7 @@ namespace IMS.WebApi.Controllers
         {
             return await BaseService.Query();
         }
-
+        
         // GET: api/Base/5
         [HttpGet("{id}")]
         public async Task<ActionResult<T>> Get(int id)
@@ -44,11 +44,12 @@ namespace IMS.WebApi.Controllers
             return entity;
         }
 
+
         // PUT: api/Base/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, T entity)
+        public async Task<IActionResult> Put(int id, [FromBody] T entity)
         {
-            PropertyInfo pi = entity.GetType().GetProperties().FirstOrDefault(p => p.IsDefined(typeof(KeyAttribute)));
+            PropertyInfo pi = await BaseService.GetGerericEntityPropertyByAnnotation(entity, typeof(KeyAttribute));
             int entityId =(int)pi.GetValue(entity);
             if (entityId != id)
             {
@@ -60,6 +61,7 @@ namespace IMS.WebApi.Controllers
                 if (e == null)
                 {
                     int eid=await BaseService.Add(entity);
+                    pi.SetValue(entity, eid);
                     return CreatedAtAction("Get", new { id = eid }, entity);
                 }
                 else
@@ -72,9 +74,9 @@ namespace IMS.WebApi.Controllers
         }
         // PATCH: api/Base
         [HttpPatch]
-        public async Task<ActionResult<T>> Patch(T entity)
+        public async Task<ActionResult<T>> Patch([FromBody] T entity)
         {
-            PropertyInfo pi = entity.GetType().GetProperties().FirstOrDefault(p => p.IsDefined(typeof(KeyAttribute)));
+            PropertyInfo pi = await BaseService.GetGerericEntityPropertyByAnnotation(entity, typeof(KeyAttribute));
             int entityId = (int)pi.GetValue(entity);
             var e = await BaseService.QueryByID(entityId);
             if (e == null)
@@ -86,10 +88,20 @@ namespace IMS.WebApi.Controllers
         }
         // POST: api/Base
         [HttpPost]
-        public async Task<ActionResult<T>> Add(T entity)
+        public async Task<ActionResult<T>> Add([FromBody]T entity)
         {
-            int entityId=await BaseService.Add(entity);       
+            int entityId=await BaseService.Add(entity);     
+            PropertyInfo pi =await BaseService.GetGerericEntityPropertyByAnnotation(entity, typeof(KeyAttribute));
+            pi.SetValue(entity, entityId);
             return CreatedAtAction("Get", new { id = entityId }, entity);
+        }
+
+        // Post: api/Base
+        [Route("[controller]Array")]
+        [HttpPost]
+        public async Task<ActionResult<IEnumerable<T>>> GetList([FromBody] int[] ids)
+        {
+            return await BaseService.QueryByIDs(ids);
         }
 
         // DELETE: api/Base/5

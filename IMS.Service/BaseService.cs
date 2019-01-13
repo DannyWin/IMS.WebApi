@@ -39,7 +39,7 @@ namespace IMS.Service
         /// </summary>
         /// <param name="lstIds">id列表（必须指定主键特性 [SugarColumn(IsPrimaryKey=true)]），如果是联合主键，请使用Where条件</param>
         /// <returns>数据实体列表</returns>
-        public async Task<List<TEntity>> QueryByIDs(object[] lstIds)
+        public async Task<List<TEntity>> QueryByIDs(int[] lstIds)
         {
             return await baseDal.QueryByIDs(lstIds);
         }
@@ -249,10 +249,13 @@ namespace IMS.Service
         public async Task<List<TEntity>> QueryPage(Expression<Func<TEntity, bool>> whereExpression,
         int intPageIndex = 0, int intPageSize = 20, string strOrderByFileds = null)
         {
-            return await baseDal.QueryPage(whereExpression,
-         intPageIndex = 0, intPageSize, strOrderByFileds);
+            return await baseDal.QueryPage(whereExpression, intPageIndex = 0, intPageSize, strOrderByFileds);
         }
 
+        public async Task<PropertyInfo> GetGerericEntityPropertyByAnnotation(TEntity entity,Type type)
+        {
+            return await Task.Run(()=>entity.GetType().GetProperties().FirstOrDefault(p => p.IsDefined(type)));
+        }
     }
     //public class BaseService<T> : IBaseService<T> where T : class
     //{

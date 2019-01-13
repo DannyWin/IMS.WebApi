@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-using IMS.Model;
+using IMS.Model.Model;
+using IMS.Model.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,8 @@ namespace IMS.WebApi
         /// </summary>
         public CustomProfile()
         {
-            CreateMap<User, User>();
+            CreateMap<User, LoginViewModel>();
+            CreateMap<LoginViewModel, User>();
         }
     }
 }

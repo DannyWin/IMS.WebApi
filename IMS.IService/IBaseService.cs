@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace IMS.IService
@@ -11,7 +12,7 @@ namespace IMS.IService
 
         Task<TEntity> QueryByID(object objId);
         Task<TEntity> QueryByID(object objId, bool blnUseCache = false);
-        Task<List<TEntity>> QueryByIDs(object[] lstIds);
+        Task<List<TEntity>> QueryByIDs(int[] lstIds);
 
         Task<int> Add(TEntity model);
 
@@ -42,7 +43,7 @@ namespace IMS.IService
 
 
         Task<List<TEntity>> QueryPage(Expression<Func<TEntity, bool>> whereExpression, int intPageIndex = 0, int intPageSize = 20, string strOrderByFileds = null);
-
+        Task<PropertyInfo> GetGerericEntityPropertyByAnnotation(TEntity entity, Type type);
         ///// <summary>
         ///// 添加
         ///// </summary>

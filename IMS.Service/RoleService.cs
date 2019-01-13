@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-using IMS.Model;
+using IMS.Model.Model;
 using IMS.IService;
 using IMS.IRepository;
 

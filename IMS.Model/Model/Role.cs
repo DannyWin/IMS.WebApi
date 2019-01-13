@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace IMS.Model
+namespace IMS.Model.Model
 {
     public class Role
     {

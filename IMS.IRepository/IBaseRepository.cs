@@ -11,7 +11,7 @@ namespace IMS.IRepository
     {
         Task<TEntity> QueryByID(object objId);
         Task<TEntity> QueryByID(object objId, bool blnUseCache = false);
-        Task<List<TEntity>> QueryByIDs(object[] lstIds);
+        Task<List<TEntity>> QueryByIDs(int[] lstIds);
 
         Task<int> Add(TEntity model);
 

@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace IMS.Model
+namespace IMS.Model.Model
 {
     public class Course
     {
@@ -13,7 +13,7 @@ namespace IMS.Model
         /// 流水号
         /// </summary>
         [Key]
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         [DisplayName("课程名称")]
         public string CourseName { get; set; }
@@ -22,10 +22,10 @@ namespace IMS.Model
         public string CourseCode { get; set; }
 
         [DisplayName("专业")]
-        public int MID { get; set; }
+        public int Mid { get; set; }
 
         [DisplayName("导师")]
-        public int TID { get; set; }
+        public int Tid { get; set; }
 
         [DisplayName("类别")]
         public int Type { get; set; }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using IMS.Model;
+using IMS.Model.Model;
 using IMS.IRepository;
 
 namespace IMS.Repository

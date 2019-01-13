@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using IMS.Model;
+using IMS.Model.Model;
 
 namespace IMS.IRepository
 {

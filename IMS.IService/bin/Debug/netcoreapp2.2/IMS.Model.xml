@@ -4,42 +4,42 @@
         <name>IMS.Model</name>
     </assembly>
     <members>
-        <member name="P:IMS.Model.Article.ID">
+        <member name="P:IMS.Model.Model.Article.Id">
             <summary>
             流水号
             </summary>
         </member>
-        <member name="P:IMS.Model.Course.ID">
+        <member name="P:IMS.Model.Model.Course.Id">
             <summary>
             流水号
             </summary>
         </member>
-        <member name="P:IMS.Model.SmsReceive.Id">
+        <member name="P:IMS.Model.Model.SmsReceive.Id">
             <summary>
             流水号
             </summary>
         </member>
-        <member name="P:IMS.Model.SmsSend.Id">
+        <member name="P:IMS.Model.Model.SmsSend.Id">
             <summary>
             流水号
             </summary>
         </member>
-        <member name="P:IMS.Model.User.Id">
+        <member name="P:IMS.Model.Model.User.Id">
             <summary>
             Id
             </summary>
         </member>
-        <member name="P:IMS.Model.User.Oid">
+        <member name="P:IMS.Model.Model.User.Oid">
             <summary>
             单位Id
             </summary>
         </member>
-        <member name="P:IMS.Model.User.Account">
+        <member name="P:IMS.Model.Model.User.Account">
             <summary>
             账号
             </summary>
         </member>
-        <member name="P:IMS.Model.User.Name">
+        <member name="P:IMS.Model.Model.User.Name">
             <summary>
             姓名
             </summary>

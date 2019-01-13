@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using IMS.Model;
+using IMS.Model.Model;
 using IMS.Repository;
 using IMS.IService;
 using System.Security.Claims;
+using IMS.Model.ViewModel;
 
 namespace IMS.WebApi.Controllers
 {
@@ -19,8 +20,18 @@ namespace IMS.WebApi.Controllers
         //private readonly DataContext _context;
         private IUserService UserService;
         public UserController(IUserService userService):base(userService)
-        { 
+        {
+            UserService = userService;
         }
+
+        [Route("Login")]
+        [HttpPost]
+        public async Task<ActionResult<bool>> Login(LoginViewModel lvm)
+        {
+            return await UserService.Login(lvm);
+        }
+
+
         //    public UserController(DataContext context, IUserService userService)
         //{
         //    _context = context;
@@ -90,7 +101,7 @@ namespace IMS.WebApi.Controllers
         //        return NotFound();
         //    }
         //    return await Task.Run(() => UserService.Delete(user));
-              
+
         //}
 
         //private bool UserExists(int id)

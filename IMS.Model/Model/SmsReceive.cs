@@ -5,24 +5,20 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace IMS.Model
+namespace IMS.Model.Model
 {
-    public class SmsSend
+    public class SmsReceive
     {
         /// <summary>
         /// 流水号
         /// </summary>
         [Key]
-        public int Id { get;}
-
+        public int Id { get; set; }
+        //SendID
+        public int Sid { get; set; }
         public int Uid { get; set; }
-        public string Title { get; set; }
-
-        public string Content { get; set; }
-
-        public DateTime SendTime { get; set; }
-
-        public string Attachment { get; set; }
+        public bool Read { get; set; }
+        public DateTime ReadTime { get; set; }
 
         public bool Delete { get; set; }
     }

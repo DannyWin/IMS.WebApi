@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace IMS.Model
+namespace IMS.Model.Model
 {
     public class User
     {
@@ -9,7 +9,7 @@ namespace IMS.Model
         /// Id
         /// </summary>
         [Key]
-        public int Id { get;}
+        public int Id { get; set; }
         /// <summary>
         /// 单位Id
         /// </summary>

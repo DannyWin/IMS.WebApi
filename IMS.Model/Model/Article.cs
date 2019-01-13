@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace IMS.Model
+namespace IMS.Model.Model
 {
     public class Article
     {
@@ -13,10 +13,10 @@ namespace IMS.Model
         /// 流水号
         /// </summary>
         [Key]
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         [DisplayName("栏目")]
-        public int NodeID { get; set; }
+        public int NodeId { get; set; }
 
         [DisplayName("标题")]
         [Required]

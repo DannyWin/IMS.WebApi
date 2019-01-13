@@ -4,6 +4,5 @@ D:\Projects\IMS.WebApi\IMS.Common\obj\Debug\netcoreapp2.2\IMS.Common.csproj.Core
 D:\Projects\IMS.WebApi\IMS.Common\obj\Debug\netcoreapp2.2\IMS.Common.AssemblyInfoInputs.cache
 D:\Projects\IMS.WebApi\IMS.Common\obj\Debug\netcoreapp2.2\IMS.Common.AssemblyInfo.cs
 D:\Projects\IMS.WebApi\IMS.Common\bin\Debug\netcoreapp2.2\IMS.Common.pdb
-D:\Projects\IMS.WebApi\IMS.Common\obj\Debug\netcoreapp2.2\IMS.Common.csprojAssemblyReference.cache
 D:\Projects\IMS.WebApi\IMS.Common\obj\Debug\netcoreapp2.2\IMS.Common.dll
 D:\Projects\IMS.WebApi\IMS.Common\obj\Debug\netcoreapp2.2\IMS.Common.pdb
