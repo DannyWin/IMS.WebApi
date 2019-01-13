@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using IMS.Model;
 using IMS.Repository;
 using IMS.IService;
+using System.Security.Claims;
 
 namespace IMS.WebApi.Controllers
 {
@@ -18,7 +19,7 @@ namespace IMS.WebApi.Controllers
         //private readonly DataContext _context;
         private IUserService UserService;
         public UserController(IUserService userService):base(userService)
-        {
+        { 
         }
         //    public UserController(DataContext context, IUserService userService)
         //{

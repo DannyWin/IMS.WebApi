@@ -25,3 +25,5 @@ D:\Projects\IMS.WebApi\IMS.WebApi\obj\Debug\netcoreapp2.2\IMS.WebApi.RazorTarget
 D:\Projects\IMS.WebApi\IMS.WebApi\obj\Debug\netcoreapp2.2\IMS.WebApi.csproj.CopyComplete
 D:\Projects\IMS.WebApi\IMS.WebApi\obj\Debug\netcoreapp2.2\IMS.WebApi.dll
 D:\Projects\IMS.WebApi\IMS.WebApi\obj\Debug\netcoreapp2.2\IMS.WebApi.pdb
+D:\Projects\IMS.WebApi\IMS.WebApi\bin\Debug\netcoreapp2.2\IMS.Common.dll
+D:\Projects\IMS.WebApi\IMS.WebApi\bin\Debug\netcoreapp2.2\IMS.Common.pdb

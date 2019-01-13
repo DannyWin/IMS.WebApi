@@ -10,6 +10,8 @@ using IMS.Repository;
 using System.Runtime.Serialization;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Security.Claims;
+using System.ComponentModel.DataAnnotations;
 
 namespace IMS.WebApi.Controllers
 {
@@ -46,8 +48,9 @@ namespace IMS.WebApi.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, T entity)
         {
-            string entityId =entity.GetType().GetProperty("Id").GetValue(entity).ToString();
-            if (entityId != id.ToString())
+            PropertyInfo pi = entity.GetType().GetProperties().FirstOrDefault(p => p.IsDefined(typeof(KeyAttribute)));
+            int entityId =(int)pi.GetValue(entity);
+            if (entityId != id)
             {
                 return BadRequest();
             }
@@ -71,7 +74,8 @@ namespace IMS.WebApi.Controllers
         [HttpPatch]
         public async Task<ActionResult<T>> Patch(T entity)
         {
-            int entityId = (int)entity.GetType().GetProperty("Id").GetValue(entity);
+            PropertyInfo pi = entity.GetType().GetProperties().FirstOrDefault(p => p.IsDefined(typeof(KeyAttribute)));
+            int entityId = (int)pi.GetValue(entity);
             var e = await BaseService.QueryByID(entityId);
             if (e == null)
             {

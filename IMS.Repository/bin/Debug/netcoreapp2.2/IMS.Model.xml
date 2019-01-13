@@ -4,6 +4,26 @@
         <name>IMS.Model</name>
     </assembly>
     <members>
+        <member name="P:IMS.Model.Article.ID">
+            <summary>
+            流水号
+            </summary>
+        </member>
+        <member name="P:IMS.Model.Course.ID">
+            <summary>
+            流水号
+            </summary>
+        </member>
+        <member name="P:IMS.Model.SmsReceive.Id">
+            <summary>
+            流水号
+            </summary>
+        </member>
+        <member name="P:IMS.Model.SmsSend.Id">
+            <summary>
+            流水号
+            </summary>
+        </member>
         <member name="P:IMS.Model.User.Id">
             <summary>
             Id
@@ -14,7 +34,7 @@
             单位Id
             </summary>
         </member>
-        <member name="P:IMS.Model.User.Uid">
+        <member name="P:IMS.Model.User.Account">
             <summary>
             账号
             </summary>

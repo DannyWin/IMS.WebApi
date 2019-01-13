@@ -9,7 +9,7 @@ namespace IMS.Model
         /// Id
         /// </summary>
         [Key]
-        public int Id { get; set; }
+        public int Id { get;}
         /// <summary>
         /// 单位Id
         /// </summary>
@@ -17,7 +17,7 @@ namespace IMS.Model
         /// <summary>
         /// 账号
         /// </summary>
-        public string Uid { get; set; }
+        public string Account { get; set; }
         public string Pwd { get; set; }
         /// <summary>
         /// 姓名

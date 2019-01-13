@@ -4,5 +4,10 @@
         <name>IMS.WebApi</name>
     </assembly>
     <members>
+        <member name="M:IMS.WebApi.CustomProfile.#ctor">
+            <summary>
+            配置构造函数，用来创建关系映射
+            </summary>
+        </member>
     </members>
 </doc>

@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\IMS.Common\IMS.Common.csproj" />
     <ProjectReference Include="..\IMS.IRepository\IMS.IRepository.csproj" />
     <ProjectReference Include="..\IMS.Model\IMS.Model.csproj" />
   </ItemGroup>
