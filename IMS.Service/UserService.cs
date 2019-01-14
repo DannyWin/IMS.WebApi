@@ -28,6 +28,9 @@ namespace IMS.Service
            var list = await dal.Query(u => u.Account == user.Account && u.Pwd == user.Pwd);
            return list.Count() > 0;
         }
+
+
+        
         //IUserRepository UserRepository;
         //public UserService(IUserRepository userRepository) : base(userRepository)
         //{

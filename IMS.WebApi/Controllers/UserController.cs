@@ -10,6 +10,7 @@ using IMS.Repository;
 using IMS.IService;
 using System.Security.Claims;
 using IMS.Model.ViewModel;
+using IMS.WebApi.AuthHelper;
 
 namespace IMS.WebApi.Controllers
 {
@@ -29,6 +30,25 @@ namespace IMS.WebApi.Controllers
         public async Task<ActionResult<bool>> Login(LoginViewModel lvm)
         {
             return await UserService.Login(lvm);
+        }
+
+        /// <summary>
+        /// 获取JWT的重写方法，推荐这种，注意在文件夹OverWrite下
+        /// </summary>
+        /// <param name="id">id</param>
+        /// <param name="sub">角色</param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("Token2")]
+        public string GetJWTStr(long id = 1, string sub = "Admin")
+        {
+            //这里就是用户登录以后，通过数据库去调取数据，分配权限的操作
+            TokenModelJWT tokenModel = new TokenModelJWT();
+            tokenModel.Uid = id;
+            tokenModel.Role = sub;
+
+            string jwtStr = JwtHelper.IssueJWT(tokenModel);
+            return jwtStr;
         }
 
 

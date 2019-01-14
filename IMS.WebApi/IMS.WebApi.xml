@@ -4,10 +4,118 @@
         <name>IMS.WebApi</name>
     </assembly>
     <members>
+        <member name="M:IMS.WebApi.AuthHelper.JwtHelper.IssueJWT(IMS.WebApi.AuthHelper.TokenModelJWT)">
+            <summary>
+            颁发JWT字符串
+            </summary>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IMS.WebApi.AuthHelper.JwtHelper.SerializeJWT(System.String)">
+            <summary>
+            解析
+            </summary>
+            <param name="jwtStr"></param>
+            <returns></returns>
+        </member>
+        <member name="T:IMS.WebApi.AuthHelper.TokenModelJWT">
+            <summary>
+            令牌
+            </summary>
+        </member>
+        <member name="P:IMS.WebApi.AuthHelper.TokenModelJWT.Uid">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:IMS.WebApi.AuthHelper.TokenModelJWT.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:IMS.WebApi.AuthHelper.TokenModelJWT.Work">
+            <summary>
+            职能
+            </summary>
+        </member>
+        <member name="T:IMS.WebApi.AuthHelper.JwtTokenAuth">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IMS.WebApi.AuthHelper.JwtTokenAuth._next">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:IMS.WebApi.AuthHelper.JwtTokenAuth.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:IMS.WebApi.AuthHelper.JwtTokenAuth.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
         <member name="M:IMS.WebApi.CustomProfile.#ctor">
             <summary>
             配置构造函数，用来创建关系映射
             </summary>
+        </member>
+        <member name="M:IMS.WebApi.Controllers.UserController.GetJWTStr(System.Int64,System.String)">
+            <summary>
+            获取JWT的重写方法，推荐这种，注意在文件夹OverWrite下
+            </summary>
+            <param name="id">id</param>
+            <param name="sub">角色</param>
+            <returns></returns>
+        </member>
+        <member name="T:IMS.WebApi.SwaggerHelper.CustomApiVersion">
+            <summary>
+            自定义版本
+            </summary>
+        </member>
+        <member name="T:IMS.WebApi.SwaggerHelper.CustomApiVersion.ApiVersions">
+            <summary>
+            Api接口版本 自定义
+            </summary>
+        </member>
+        <member name="F:IMS.WebApi.SwaggerHelper.CustomApiVersion.ApiVersions.v1">
+            <summary>
+            v1 版本
+            </summary>
+        </member>
+        <member name="F:IMS.WebApi.SwaggerHelper.CustomApiVersion.ApiVersions.v2">
+            <summary>
+            v2 版本
+            </summary>
+        </member>
+        <member name="T:IMS.WebApi.SwaggerHelper.CustomRouteAttribute">
+            <summary>
+            自定义路由 /api/{version}/[controler]/[action]
+            </summary>
+        </member>
+        <member name="P:IMS.WebApi.SwaggerHelper.CustomRouteAttribute.GroupName">
+            <summary>
+            分组名称,是来实现接口 IApiDescriptionGroupNameProvider
+            </summary>
+        </member>
+        <member name="M:IMS.WebApi.SwaggerHelper.CustomRouteAttribute.#ctor(System.String)">
+            <summary>
+            自定义路由构造函数，继承基类路由
+            </summary>
+            <param name="actionName"></param>
+        </member>
+        <member name="M:IMS.WebApi.SwaggerHelper.CustomRouteAttribute.#ctor(IMS.WebApi.SwaggerHelper.CustomApiVersion.ApiVersions,System.String)">
+            <summary>
+            自定义版本+路由构造函数，继承基类路由
+            </summary>
+            <param name="actionName"></param>
+            <param name="version"></param>
         </member>
     </members>
 </doc>

@@ -12,6 +12,9 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Security.Claims;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Authorization;
+using static IMS.WebApi.SwaggerHelper.CustomApiVersion;
+using IMS.WebApi.SwaggerHelper;
 
 namespace IMS.WebApi.Controllers
 {
@@ -26,7 +29,16 @@ namespace IMS.WebApi.Controllers
         }
 
         // GET: api/Base
+       
         [HttpGet]
+        [Authorize(Policy ="Admin")]
+        ////MVC自带特性 对 api 进行组管理
+        //[ApiExplorerSettings(GroupName = "v2")]
+        ////路径 如果以 / 开头，表示绝对路径，反之相对 controller 的想u地路径
+        //[Route("/api/v2/blog/Blogtest")]
+
+        //和上边的版本控制以及路由地址都是一样的
+        [CustomRoute(ApiVersions.v2, "test")]
         public async Task<IEnumerable<T>> Get()
         {
             return await BaseService.Query();
